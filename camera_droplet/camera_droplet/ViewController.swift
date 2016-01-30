@@ -36,6 +36,26 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     @IBOutlet weak var xval: UISlider!
     @IBOutlet weak var yval: UISlider!
     @IBOutlet weak var camera: UIButton!
+    
+    
+    @IBAction func takePhoto(sender: AnyObject) {
+        let imagePicker = UIImagePickerController()
+        
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera) {
+            
+            imagePicker.sourceType = UIImagePickerControllerSourceType.Camera
+            
+        } else {
+            
+            let alert = UIAlertController(title: "", message: "No camera available", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
+        
+        imagePicker.delegate = self
+        presentViewController(imagePicker, animated: true, completion: nil)
+    }
+    
     @IBAction func btnClicked(sender: AnyObject) {
         
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.SavedPhotosAlbum){
