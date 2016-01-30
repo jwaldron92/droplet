@@ -37,6 +37,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     @IBOutlet weak var yval: UISlider!
     @IBOutlet weak var camera: UIButton!
     
+    let myManager = ColorsManager()
     
     @IBAction func takePhoto(sender: AnyObject) {
         let imagePicker = UIImagePickerController()
@@ -89,6 +90,20 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         //Make sure point is within the image
         let color = image.getPixelColor(CGPointMake(CGFloat(xval.value), CGFloat(yval.value)))
         colorText.backgroundColor = color;
+        
+        let colorImage = ColorImage(color: color)
+        
+        myManager.colorsList += [colorImage]
+        myManager.save()
+        
+    }
+    
+    
+    @IBAction func showColor(sender: AnyObject) {
+        
+        for color in myManager.colorsList {
+            colorText.backgroundColor = color.color;
+        }
     }
     
     

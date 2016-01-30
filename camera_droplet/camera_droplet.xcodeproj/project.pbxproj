@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B87C83C91C5D43A3003FE9E1 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87C83C81C5D43A3003FE9E1 /* GalleryViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		B87C83C91C5D43A3003FE9E1 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87C83C81C5D43A3003FE9E1 /* GalleryViewController.swift */; };
 		B8A384A81C5C164300EE71FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A384A71C5C164300EE71FB /* AppDelegate.swift */; };
 		B8A384AA1C5C164300EE71FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A384A91C5C164300EE71FB /* ViewController.swift */; };
 		B8A384AD1C5C164300EE71FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8A384AB1C5C164300EE71FB /* Main.storyboard */; };
@@ -15,7 +15,9 @@
 		B8A384B21C5C164300EE71FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8A384B01C5C164300EE71FB /* LaunchScreen.storyboard */; };
 		B8A384BD1C5C164300EE71FB /* camera_dropletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A384BC1C5C164300EE71FB /* camera_dropletTests.swift */; };
 		B8A384C81C5C164300EE71FB /* camera_dropletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A384C71C5C164300EE71FB /* camera_dropletUITests.swift */; };
-		B8A384D61C5C174F00EE71FB /* pipette.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B8A384D51C5C174F00EE71FB /* pipette.jpg */; settings = {ASSET_TAGS = (); }; };
+		B8A384D61C5C174F00EE71FB /* pipette.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B8A384D51C5C174F00EE71FB /* pipette.jpg */; };
+		C9F114F41C5D6F0900E7DF6E /* ColorsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F114F31C5D6F0900E7DF6E /* ColorsManager.swift */; };
+		C9F114F61C5D6F9400E7DF6E /* ColorImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F114F51C5D6F9400E7DF6E /* ColorImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		B8A384C71C5C164300EE71FB /* camera_dropletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = camera_dropletUITests.swift; sourceTree = "<group>"; };
 		B8A384C91C5C164300EE71FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8A384D51C5C174F00EE71FB /* pipette.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pipette.jpg; sourceTree = "<group>"; };
+		C9F114F31C5D6F0900E7DF6E /* ColorsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsManager.swift; sourceTree = "<group>"; };
+		C9F114F51C5D6F9400E7DF6E /* ColorImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				B8A384D51C5C174F00EE71FB /* pipette.jpg */,
 				B8A384B01C5C164300EE71FB /* LaunchScreen.storyboard */,
 				B8A384B31C5C164300EE71FB /* Info.plist */,
+				C9F114F31C5D6F0900E7DF6E /* ColorsManager.swift */,
+				C9F114F51C5D6F9400E7DF6E /* ColorImage.swift */,
 			);
 			path = camera_droplet;
 			sourceTree = "<group>";
@@ -265,6 +271,8 @@
 				B87C83C91C5D43A3003FE9E1 /* GalleryViewController.swift in Sources */,
 				B8A384AA1C5C164300EE71FB /* ViewController.swift in Sources */,
 				B8A384A81C5C164300EE71FB /* AppDelegate.swift in Sources */,
+				C9F114F61C5D6F9400E7DF6E /* ColorImage.swift in Sources */,
+				C9F114F41C5D6F0900E7DF6E /* ColorsManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
