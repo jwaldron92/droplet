@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B87C83C91C5D43A3003FE9E1 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87C83C81C5D43A3003FE9E1 /* GalleryViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		B8A384A81C5C164300EE71FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A384A71C5C164300EE71FB /* AppDelegate.swift */; };
 		B8A384AA1C5C164300EE71FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A384A91C5C164300EE71FB /* ViewController.swift */; };
 		B8A384AD1C5C164300EE71FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8A384AB1C5C164300EE71FB /* Main.storyboard */; };
@@ -36,7 +35,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B87C83C81C5D43A3003FE9E1 /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		B8A384A41C5C164300EE71FB /* camera_droplet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = camera_droplet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8A384A71C5C164300EE71FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8A384A91C5C164300EE71FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,7 +101,6 @@
 			children = (
 				B8A384A71C5C164300EE71FB /* AppDelegate.swift */,
 				B8A384A91C5C164300EE71FB /* ViewController.swift */,
-				B87C83C81C5D43A3003FE9E1 /* GalleryViewController.swift */,
 				B8A384AB1C5C164300EE71FB /* Main.storyboard */,
 				B8A384AE1C5C164300EE71FB /* Assets.xcassets */,
 				B8A384D51C5C174F00EE71FB /* pipette.jpg */,
@@ -262,7 +259,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B87C83C91C5D43A3003FE9E1 /* GalleryViewController.swift in Sources */,
 				B8A384AA1C5C164300EE71FB /* ViewController.swift in Sources */,
 				B8A384A81C5C164300EE71FB /* AppDelegate.swift in Sources */,
 			);
@@ -491,7 +487,6 @@
 				B8A384CE1C5C164300EE71FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		B8A384CF1C5C164300EE71FB /* Build configuration list for PBXNativeTarget "camera_dropletTests" */ = {
 			isa = XCConfigurationList;
@@ -500,7 +495,6 @@
 				B8A384D11C5C164300EE71FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		B8A384D21C5C164300EE71FB /* Build configuration list for PBXNativeTarget "camera_dropletUITests" */ = {
 			isa = XCConfigurationList;
@@ -509,7 +503,6 @@
 				B8A384D41C5C164300EE71FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
