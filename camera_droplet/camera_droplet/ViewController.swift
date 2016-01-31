@@ -41,6 +41,9 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     let myManager = ColorsManager()
     let imageManager = ImageManager()
     
+    @IBOutlet weak var scrollView: UIScrollView!
+    
+    
     @IBAction func takePhoto(sender: AnyObject) {
         let imagePicker = UIImagePickerController()
         
@@ -112,6 +115,20 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.SavedPhotosAlbum){
+            print("Button capture")
+            
+            
+            imagePicker.delegate = self
+            imagePicker.sourceType = UIImagePickerControllerSourceType.SavedPhotosAlbum;
+            imagePicker.allowsEditing = false
+            
+        }
+        
+        scrollView.addSubview(imagePicker.view)
+        scrollView.contentSize = CGSizeMake(650, 500)
+        imagePicker.view.frame = CGRectMake(0, 0, 650, 500)
     }
 
     override func didReceiveMemoryWarning() {
