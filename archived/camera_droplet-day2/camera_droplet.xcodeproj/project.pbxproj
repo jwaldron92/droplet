@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B82A6EDC1C5DB7340064FF90 /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82A6EDB1C5DB7340064FF90 /* ColorPickerViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		B87C83C91C5D43A3003FE9E1 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87C83C81C5D43A3003FE9E1 /* GalleryViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		B87C83D01C5D64E3003FE9E1 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B87C83CE1C5D64E3003FE9E1 /* Interface.storyboard */; };
 		B87C83D21C5D64E3003FE9E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B87C83D11C5D64E3003FE9E1 /* Assets.xcassets */; };
@@ -84,7 +83,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B82A6EDB1C5DB7340064FF90 /* ColorPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
 		B87C83C81C5D43A3003FE9E1 /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		B87C83CC1C5D64E3003FE9E1 /* dropletWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dropletWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B87C83CF1C5D64E3003FE9E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -205,7 +203,6 @@
 			children = (
 				B8A384A71C5C164300EE71FB /* AppDelegate.swift */,
 				B8A384A91C5C164300EE71FB /* ViewController.swift */,
-				B82A6EDB1C5DB7340064FF90 /* ColorPickerViewController.swift */,
 				B87C83C81C5D43A3003FE9E1 /* GalleryViewController.swift */,
 				B8A384AB1C5C164300EE71FB /* Main.storyboard */,
 				B8A384AE1C5C164300EE71FB /* Assets.xcassets */,
@@ -438,7 +435,6 @@
 			files = (
 				B87C83C91C5D43A3003FE9E1 /* GalleryViewController.swift in Sources */,
 				B8A384AA1C5C164300EE71FB /* ViewController.swift in Sources */,
-				B82A6EDC1C5DB7340064FF90 /* ColorPickerViewController.swift in Sources */,
 				B8A384A81C5C164300EE71FB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -735,7 +731,6 @@
 				B87C83ED1C5D64E4003FE9E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		B87C83EF1C5D64E4003FE9E1 /* Build configuration list for PBXNativeTarget "dropletWatch" */ = {
 			isa = XCConfigurationList;
@@ -744,7 +739,6 @@
 				B87C83F11C5D64E4003FE9E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		B8A3849F1C5C164300EE71FB /* Build configuration list for PBXProject "camera_droplet" */ = {
 			isa = XCConfigurationList;

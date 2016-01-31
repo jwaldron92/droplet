@@ -78,12 +78,7 @@ extension UIImage{
 
 class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     var imagePicker = UIImagePickerController()
-    
-    var colorPickerViewController: UIViewController!
 
-    
-    @IBOutlet weak var imageViewOutlet: UIView!
-    
     @IBOutlet weak var imageTemp: UIImageView!
     
     @IBOutlet weak var capture: UIButton!
@@ -117,7 +112,6 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         
     }
     
-    
     @IBOutlet weak var colorText: UITextField!
     
     @IBAction func setrgb(sender: AnyObject) {
@@ -134,31 +128,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let gestureRecognizer = UITapGestureRecognizer(target: self, action: "handleTap:")
-        self.imageViewOutlet.addGestureRecognizer(gestureRecognizer)
-        
-        
-        if let colorPickerViewController = self.colorPickerViewController as? ColorPickerViewController {
-            colorText2.text = colorPickerViewController.label
-        }
         // Do any additional setup after loading the view, typically from a nib.
-    }
-    
-    func handleTap(gestureRecognizer: UIGestureRecognizer) {
-        print("You tapped at \(gestureRecognizer.locationInView(self.view))")
-    }
-    
-    func changeColorText2(text: String) {
-        if let colorText2 = self.colorText2 {
-            colorText2.text = text
-        }
-    }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "toColorPicker" {
-            self.colorPickerViewController = segue.destinationViewController
-        }
     }
 
     override func didReceiveMemoryWarning() {
