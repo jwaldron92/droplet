@@ -18,6 +18,9 @@
 		B8A384D61C5C174F00EE71FB /* pipette.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B8A384D51C5C174F00EE71FB /* pipette.jpg */; };
 		C9F114F41C5D6F0900E7DF6E /* ColorsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F114F31C5D6F0900E7DF6E /* ColorsManager.swift */; };
 		C9F114F61C5D6F9400E7DF6E /* ColorImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F114F51C5D6F9400E7DF6E /* ColorImage.swift */; };
+		C9F114F81C5DAE0B00E7DF6E /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F114F71C5DAE0B00E7DF6E /* ColorViewController.swift */; };
+		C9F114FA1C5DB40E00E7DF6E /* SaveImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F114F91C5DB40E00E7DF6E /* SaveImage.swift */; };
+		C9F114FC1C5DB48A00E7DF6E /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F114FB1C5DB48A00E7DF6E /* ImageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		B8A384D51C5C174F00EE71FB /* pipette.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pipette.jpg; sourceTree = "<group>"; };
 		C9F114F31C5D6F0900E7DF6E /* ColorsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsManager.swift; sourceTree = "<group>"; };
 		C9F114F51C5D6F9400E7DF6E /* ColorImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorImage.swift; sourceTree = "<group>"; };
+		C9F114F71C5DAE0B00E7DF6E /* ColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
+		C9F114F91C5DB40E00E7DF6E /* SaveImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveImage.swift; sourceTree = "<group>"; };
+		C9F114FB1C5DB48A00E7DF6E /* ImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,8 +119,9 @@
 				B8A384D51C5C174F00EE71FB /* pipette.jpg */,
 				B8A384B01C5C164300EE71FB /* LaunchScreen.storyboard */,
 				B8A384B31C5C164300EE71FB /* Info.plist */,
-				C9F114F31C5D6F0900E7DF6E /* ColorsManager.swift */,
-				C9F114F51C5D6F9400E7DF6E /* ColorImage.swift */,
+				C9F114FE1C5DB58B00E7DF6E /* SaveColorData */,
+				C9F114F71C5DAE0B00E7DF6E /* ColorViewController.swift */,
+				C9F114FF1C5DB59B00E7DF6E /* SaveImageData */,
 			);
 			path = camera_droplet;
 			sourceTree = "<group>";
@@ -135,6 +142,24 @@
 				B8A384C91C5C164300EE71FB /* Info.plist */,
 			);
 			path = camera_dropletUITests;
+			sourceTree = "<group>";
+		};
+		C9F114FE1C5DB58B00E7DF6E /* SaveColorData */ = {
+			isa = PBXGroup;
+			children = (
+				C9F114F31C5D6F0900E7DF6E /* ColorsManager.swift */,
+				C9F114F51C5D6F9400E7DF6E /* ColorImage.swift */,
+			);
+			name = SaveColorData;
+			sourceTree = "<group>";
+		};
+		C9F114FF1C5DB59B00E7DF6E /* SaveImageData */ = {
+			isa = PBXGroup;
+			children = (
+				C9F114F91C5DB40E00E7DF6E /* SaveImage.swift */,
+				C9F114FB1C5DB48A00E7DF6E /* ImageManager.swift */,
+			);
+			name = SaveImageData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,7 +296,10 @@
 				B87C83C91C5D43A3003FE9E1 /* GalleryViewController.swift in Sources */,
 				B8A384AA1C5C164300EE71FB /* ViewController.swift in Sources */,
 				B8A384A81C5C164300EE71FB /* AppDelegate.swift in Sources */,
+				C9F114FC1C5DB48A00E7DF6E /* ImageManager.swift in Sources */,
 				C9F114F61C5D6F9400E7DF6E /* ColorImage.swift in Sources */,
+				C9F114F81C5DAE0B00E7DF6E /* ColorViewController.swift in Sources */,
+				C9F114FA1C5DB40E00E7DF6E /* SaveImage.swift in Sources */,
 				C9F114F41C5D6F0900E7DF6E /* ColorsManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

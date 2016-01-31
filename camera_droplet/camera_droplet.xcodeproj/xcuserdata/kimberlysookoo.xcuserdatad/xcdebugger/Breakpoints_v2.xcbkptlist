@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "camera_droplet/ColorImage.swift"
-            timestampString = "475886514.237258"
+            timestampString = "475903532.77215"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "init(color:)"
             landmarkType = "5">
          </BreakpointContent>

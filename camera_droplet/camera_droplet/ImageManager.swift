@@ -1,5 +1,5 @@
 //
-//  ColorsManager.swift
+//  ImageManager.swift
 //  camera_droplet
 //
 //  Created by Kimberly Sookoo on 1/30/16.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-class ColorsManager {
-    var savedColor: ColorImage?
+class ImageManager {
+    var savedImage: SaveImage?
     
     func archivePath() -> String? {
         let directoryList = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
         if let documentsPath = directoryList.first {
-            return documentsPath + "/ColorImage"
+            return documentsPath + "/SavedImage"
         }
         
         assertionFailure("Could not determine where to store files")
@@ -23,7 +23,7 @@ class ColorsManager {
     
     func save() {
         if let theArchivePath = archivePath() {
-            if NSKeyedArchiver.archiveRootObject(savedColor!, toFile: theArchivePath) {
+            if NSKeyedArchiver.archiveRootObject(savedImage!, toFile: theArchivePath) {
                 print("Saved successfully!")
             } else {
                 assertionFailure("Could not save data to \(theArchivePath)")
@@ -34,7 +34,7 @@ class ColorsManager {
     func unarchiveSavedItems() {
         if let theArchivePath = archivePath() {
             if NSFileManager.defaultManager().fileExistsAtPath(theArchivePath) {
-                savedColor = NSKeyedUnarchiver.unarchiveObjectWithFile(theArchivePath) as? ColorImage
+                savedImage = NSKeyedUnarchiver.unarchiveObjectWithFile(theArchivePath) as? SaveImage
             }
         }
     }
@@ -42,5 +42,4 @@ class ColorsManager {
     init() {
         unarchiveSavedItems()
     }
-    
 }

@@ -12,7 +12,6 @@ class ColorImage: NSObject, NSCoding {
     
     //let name: String
     var color: UIColor?
-    //var photo: UIImage?
     
     var completed: Bool {
         get {

@@ -8,6 +8,7 @@
 
 
 import UIKit
+
 extension UIImage {
     func getPixelColor(pos: CGPoint) -> UIColor {
         
@@ -38,6 +39,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     @IBOutlet weak var camera: UIButton!
     
     let myManager = ColorsManager()
+    let imageManager = ImageManager()
     
     @IBAction func takePhoto(sender: AnyObject) {
         let imagePicker = UIImagePickerController()
@@ -77,6 +79,10 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
             
         })
         
+        let imageS = SaveImage(photo: image)
+        imageManager.savedImage = imageS
+        imageManager.save()
+        
         imageTemp.image = image
         
     }
@@ -93,17 +99,13 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         
         let colorImage = ColorImage(color: color)
         
-        myManager.colorsList += [colorImage]
+        myManager.savedColor = colorImage
         myManager.save()
         
     }
     
     
     @IBAction func showColor(sender: AnyObject) {
-        
-        for color in myManager.colorsList {
-            colorText.backgroundColor = color.color;
-        }
     }
     
     

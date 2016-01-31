@@ -74,6 +74,7 @@
                                 <state key="normal" title="Show Color"/>
                                 <connections>
                                     <action selector="showColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gfR-Yt-h4H"/>
+                                    <segue destination="5Hs-uP-PTg" kind="presentation" id="jM3-Aq-sBg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -104,10 +105,10 @@
             </objects>
             <point key="canvasLocation" x="101" y="-125"/>
         </scene>
-        <!--View Controller-->
+        <!--Color View Controller-->
         <scene sceneID="deA-FZ-FVo">
             <objects>
-                <viewController id="WKD-X0-npf" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="colorViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WKD-X0-npf" customClass="ColorViewController" customModule="camera_droplet" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PK6-IJ-VHA"/>
                         <viewControllerLayoutGuide type="bottom" id="7QV-32-5sV"/>
@@ -115,9 +116,34 @@
                     <view key="view" contentMode="scaleToFill" id="Hbe-FQ-8cJ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qgA-2l-V9W">
+                                <rect key="frame" x="120" y="100" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="BNy-XI-7dZ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="Cph-bK-kTu"/>
+                                    <constraint firstAttribute="width" constant="200" id="W0J-VM-wzf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qgA-2l-V9W" firstAttribute="leading" secondItem="Hbe-FQ-8cJ" secondAttribute="leadingMargin" constant="100" id="oj4-6A-asi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qgA-2l-V9W" secondAttribute="trailing" constant="100" id="sgt-S1-f1I"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="buF-Nq-Bpc"/>
+                    <navigationItem key="navigationItem" id="buF-Nq-Bpc">
+                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="sOY-bs-I5X">
+                            <connections>
+                                <action selector="cancel:" destination="WKD-X0-npf" id="72g-jf-W9n"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="colorText" destination="qgA-2l-V9W" id="ezf-ak-6oK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qCc-i7-JZy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -241,6 +267,6 @@
         <image name="pipette.jpg" width="395" height="472"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dRO-fB-gSA"/>
+        <segue reference="Rgn-rx-GqX"/>
     </inferredMetricsTieBreakers>
 </document>
