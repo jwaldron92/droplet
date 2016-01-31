@@ -70,12 +70,6 @@
                                     <segue destination="ISb-Lo-gnJ" kind="show" id="nnq-Qe-nY0"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0e-L4-m1C">
-                                <rect key="frame" x="177" y="282" width="246" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -94,7 +88,6 @@
                         <outlet property="camera" destination="g7p-w5-YwK" id="GS5-i0-pc2"/>
                         <outlet property="capture" destination="17v-rZ-oX5" id="y4J-96-Mf6"/>
                         <outlet property="colorText" destination="ggR-Qo-AnC" id="8RM-fN-dVJ"/>
-                        <outlet property="colorText2" destination="K0e-L4-m1C" id="Xt4-K4-hYD"/>
                         <outlet property="imageTemp" destination="bS9-nH-rsD" id="32C-8f-NdT"/>
                         <outlet property="setColor" destination="8Qh-aI-ABw" id="GNL-BS-Hkz"/>
                         <outlet property="xval" destination="pWJ-8w-JZ8" id="MlN-Up-Ogf"/>
@@ -103,7 +96,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="453" y="-292"/>
+            <point key="canvasLocation" x="101" y="-125"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="vrH-iL-LAp">
