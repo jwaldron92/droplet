@@ -86,7 +86,6 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     
     @IBOutlet weak var imageTemp: UIImageView!
     
-    @IBOutlet weak var pickerImage: UIImageView!
     @IBOutlet weak var capture: UIButton!
     
     @IBOutlet weak var colorText2: UILabel!
@@ -114,23 +113,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
             
         })
         
-//        imageTemp.image = image
-        pickerImage.image = resizeImage(image, newHeight: CGFloat(300))
-       // pickerImage.image = image
+        imageTemp.image = image
         
-        
-    }
-    
-    func resizeImage(image: UIImage, newHeight: CGFloat) -> UIImage {
-        
-        let scale = newHeight / image.size.height
-        let newWidth = image.size.width * scale
-        UIGraphicsBeginImageContext(CGSizeMake(newWidth, newHeight))
-        image.drawInRect(CGRectMake(0, 0, newWidth, newHeight))
-        let newImage = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        
-        return newImage
     }
     
     
@@ -163,17 +147,6 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     
     func handleTap(gestureRecognizer: UIGestureRecognizer) {
         print("You tapped at \(gestureRecognizer.locationInView(self.view))")
-        print("You tapped at \(gestureRecognizer.locationInView(view))")
-        print(pickerImage.image!.size.height)
-        print(pickerImage.image!.size.width)
-        //imageViewOutlet.frame = CGRectMake(0 , 0, pickerImage.image!.size.width, pickerImage.image!.size.height)
-        let point = gestureRecognizer.locationInView(self.view)
-        let xPoint = (point.x * 0.91777)
-        let yPoint = point.y
-        let image : UIImage = pickerImage.image!;
-        let color = image.getPixelColor(CGPointMake(xPoint, yPoint))
-        colorText.backgroundColor = color;
-        colorText2.text = color.htmlRGBColor
     }
     
     func changeColorText2(text: String) {

@@ -91,6 +91,16 @@
                                 <rect key="frame" x="244" y="387" width="118" height="31"/>
                                 <color key="thumbTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </slider>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="X-Value" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tmw-x8-bSH">
+                                <rect key="frame" x="141" y="349" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Y-Value" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gWT-Fd-JLG">
+                                <rect key="frame" x="141" y="387" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ggR-Qo-AnC">
                                 <rect key="frame" x="255" y="311" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -107,11 +117,11 @@
                                     <segue destination="ISb-Lo-gnJ" kind="show" id="nnq-Qe-nY0"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="sE5-hL-6BQ">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sE5-hL-6BQ">
                                 <rect key="frame" x="0.0" y="20" width="600" height="300"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pipette.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="6ev-bq-jJF">
-                                        <rect key="frame" x="0.0" y="33" width="600" height="267"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
                                     </imageView>
                                     <containerView hidden="YES" opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T40-e2-LAf">
                                         <rect key="frame" x="20" y="0.0" width="560" height="300"/>
@@ -129,7 +139,7 @@
                                     <constraint firstAttribute="height" constant="300" id="Z94-vl-GgL"/>
                                     <constraint firstAttribute="bottom" secondItem="6ev-bq-jJF" secondAttribute="bottom" id="aEl-C4-Qee"/>
                                     <constraint firstItem="6ev-bq-jJF" firstAttribute="leading" secondItem="sE5-hL-6BQ" secondAttribute="leading" id="jji-Jy-bKr"/>
-                                    <constraint firstItem="6ev-bq-jJF" firstAttribute="top" secondItem="sE5-hL-6BQ" secondAttribute="top" constant="33" id="kw9-5n-tew"/>
+                                    <constraint firstItem="6ev-bq-jJF" firstAttribute="top" secondItem="sE5-hL-6BQ" secondAttribute="top" id="kw9-5n-tew"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -141,6 +151,7 @@
                             <constraint firstItem="Qef-xM-rP5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AYt-mN-EEh"/>
                             <constraint firstItem="sE5-hL-6BQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="BAs-jL-Ych"/>
                             <constraint firstItem="8Qh-aI-ABw" firstAttribute="top" secondItem="Qef-xM-rP5" secondAttribute="bottom" constant="17" id="Fcx-IF-0oF"/>
+                            <constraint firstItem="pWJ-8w-JZ8" firstAttribute="leading" secondItem="tmw-x8-bSH" secondAttribute="trailing" constant="8" id="GoI-56-T4x"/>
                             <constraint firstItem="g7p-w5-YwK" firstAttribute="top" secondItem="17v-rZ-oX5" secondAttribute="bottom" constant="53" id="Hrc-1m-N6j"/>
                             <constraint firstItem="ggR-Qo-AnC" firstAttribute="top" secondItem="K0e-L4-m1C" secondAttribute="bottom" constant="8" id="JIO-BG-QZD"/>
                             <constraint firstItem="17v-rZ-oX5" firstAttribute="centerX" secondItem="g7p-w5-YwK" secondAttribute="centerX" id="Qr8-5Y-eTE"/>
@@ -151,6 +162,10 @@
                             <constraint firstItem="sE5-hL-6BQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="d8t-CG-qdN"/>
                             <constraint firstItem="pWJ-8w-JZ8" firstAttribute="top" secondItem="ggR-Qo-AnC" secondAttribute="bottom" constant="8" id="gIO-Ga-2sF"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="g7p-w5-YwK" secondAttribute="bottom" constant="79" id="ghh-6B-CeI"/>
+                            <constraint firstItem="tmw-x8-bSH" firstAttribute="top" secondItem="K0e-L4-m1C" secondAttribute="bottom" constant="46" id="h1T-lj-fLO"/>
+                            <constraint firstItem="K0e-L4-m1C" firstAttribute="leading" secondItem="tmw-x8-bSH" secondAttribute="trailing" constant="10" id="hJe-it-S0s"/>
+                            <constraint firstItem="Qef-xM-rP5" firstAttribute="leading" secondItem="gWT-Fd-JLG" secondAttribute="trailing" constant="8" id="iNR-lr-fAX"/>
+                            <constraint firstItem="gWT-Fd-JLG" firstAttribute="top" secondItem="tmw-x8-bSH" secondAttribute="bottom" constant="8" id="ilX-3R-d0h"/>
                             <constraint firstItem="ggR-Qo-AnC" firstAttribute="top" secondItem="K0e-L4-m1C" secondAttribute="bottom" constant="8" id="jLR-72-nlc"/>
                             <constraint firstItem="K0e-L4-m1C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jUY-L2-KfQ"/>
                             <constraint firstItem="pWJ-8w-JZ8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lGS-Gm-HXz"/>
@@ -162,9 +177,11 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="h1T-lj-fLO"/>
                                 <exclude reference="JIO-BG-QZD"/>
                                 <exclude reference="jLR-72-nlc"/>
                                 <exclude reference="vr4-uB-1Fn"/>
+                                <exclude reference="hJe-it-S0s"/>
                                 <exclude reference="jUY-L2-KfQ"/>
                                 <exclude reference="pdq-AJ-avc"/>
                             </mask>
@@ -177,7 +194,6 @@
                         <outlet property="colorText" destination="ggR-Qo-AnC" id="8RM-fN-dVJ"/>
                         <outlet property="colorText2" destination="K0e-L4-m1C" id="Xt4-K4-hYD"/>
                         <outlet property="imageViewOutlet" destination="sE5-hL-6BQ" id="w8R-Vj-lyS"/>
-                        <outlet property="pickerImage" destination="6ev-bq-jJF" id="Tdk-us-9CQ"/>
                         <outlet property="setColor" destination="8Qh-aI-ABw" id="GNL-BS-Hkz"/>
                         <outlet property="xval" destination="pWJ-8w-JZ8" id="MlN-Up-Ogf"/>
                         <outlet property="yval" destination="Qef-xM-rP5" id="wpm-b1-QW8"/>
@@ -286,10 +302,6 @@
         <scene sceneID="83w-oD-DcQ">
             <objects>
                 <viewController id="d9H-59-obc" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Bpv-st-xhl"/>
-                        <viewControllerLayoutGuide type="bottom" id="Xea-rh-Woy"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Uvu-fK-dt3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -304,6 +316,6 @@
         <image name="pipette.jpg" width="395" height="472"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="qhJ-8V-HPu"/>
+        <segue reference="dRO-fB-gSA"/>
     </inferredMetricsTieBreakers>
 </document>

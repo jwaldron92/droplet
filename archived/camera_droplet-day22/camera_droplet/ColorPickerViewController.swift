@@ -19,7 +19,7 @@ class ColorPickerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         touched = false
-        //label = "TESTTESTTESTTEST"
+        label = "TESTTESTTESTTEST"
 
         // Do any additional setup after loading the view.
     }
