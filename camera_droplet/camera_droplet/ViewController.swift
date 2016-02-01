@@ -132,6 +132,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     
     @IBOutlet weak var scrollView: UIScrollView!
     
+    @IBOutlet weak var gallery: UIButton!
     
     let myManager = ColorsManager()
     let imageManager = ImageManager()
@@ -209,6 +210,21 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     
     @IBOutlet weak var colorText: UITextField!
     
+    @IBAction func gallery(sender: AnyObject) {
+        
+        
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.SavedPhotosAlbum){
+            print("Button capture")
+            
+            
+            imagePicker.delegate = self
+            imagePicker.sourceType = UIImagePickerControllerSourceType.SavedPhotosAlbum;
+            imagePicker.allowsEditing = false
+            
+        }
+
+
+    }
     @IBAction func setrgb(sender: AnyObject) {
         let applicationData = ["hexValue":String(hexWatch)]
         
@@ -260,7 +276,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         
         glass.hidden=true
         
-        self.scrollViewContent()
+        //self.scrollViewContent()
     }
     
     func handlePanGesture(gesture:UIPanGestureRecognizer){
@@ -323,6 +339,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
             hexField.text = text
         }
     }
+    /*
     
     func scrollViewContent() {
         // Do any additional setup after loading the view, typically from a nib.
@@ -341,6 +358,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         scrollView.contentSize = CGSizeMake(650, 500)
         imagePicker.view.frame = CGRectMake(0, 0, 650, 500)
     }
+*/
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "toColorPicker" {
