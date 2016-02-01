@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "camera_droplet/ViewController.swift"
-            timestampString = "475990941.128475"
+            timestampString = "475983900.914191"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "151"
-            endingLineNumber = "151"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
             landmarkName = "btnClicked(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "camera_droplet/ViewController.swift"
-            timestampString = "475990941.128475"
+            timestampString = "475983900.914191"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "152"
-            endingLineNumber = "152"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
             landmarkName = "btnClicked(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "camera_droplet/ViewController.swift"
-            timestampString = "475987936.175023"
+            timestampString = "475976160.990071"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "getPixelColor(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "camera_droplet/ViewController.swift"
-            timestampString = "475987936.175023"
+            timestampString = "475976160.990071"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
             landmarkName = "UIColor"
             landmarkType = "3">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "camera_droplet/ViewController.swift"
-            timestampString = "475987936.175023"
+            timestampString = "475976160.990071"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
             landmarkName = "getPixelColor(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -110,70 +110,6 @@
             startingLineNumber = "98"
             endingLineNumber = "98"
             landmarkName = "session(_:didReceiveMessage:replyHandler:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "camera_droplet/ViewController.swift"
-            timestampString = "475990941.128475"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "137"
-            endingLineNumber = "137"
-            landmarkName = "ViewController"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "camera_droplet.ViewController.init (camera_droplet.ViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; camera_droplet.ViewController"
-                  moduleName = "camera_droplet"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jjwInNY/Documents/Working/camera_droplet/camera_droplet/camera_droplet/ViewController.swift"
-                  timestampString = "475987937.187431"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "134"
-                  endingLineNumber = "134"
-                  offsetFromSymbolStart = "746">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "camera_droplet.ViewController.init (camera_droplet.ViewController.Type)(coder : ObjectiveC.NSCoder) -&gt; Swift.Optional&lt;camera_droplet.ViewController&gt;"
-                  moduleName = "camera_droplet"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jjwInNY/Documents/Working/camera_droplet/camera_droplet/camera_droplet/ViewController.swift"
-                  timestampString = "475987937.187656"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "134"
-                  endingLineNumber = "134"
-                  offsetFromSymbolStart = "678">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "camera_droplet/ViewController.swift"
-            timestampString = "475990941.128475"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "267"
-            endingLineNumber = "267"
-            landmarkName = "handlePanGesture(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

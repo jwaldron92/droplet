@@ -9,12 +9,7 @@
 /* Begin PBXBuildFile section */
 		B82A6EDC1C5DB7340064FF90 /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82A6EDB1C5DB7340064FF90 /* ColorPickerViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		B8751A0D1C5ECB17004D3EBC /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8751A0C1C5ECB17004D3EBC /* InterfaceController.swift */; settings = {ASSET_TAGS = (); }; };
-		B8751A111C5EFE9A004D3EBC /* ColorImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8751A0F1C5EFE9A004D3EBC /* ColorImage.swift */; settings = {ASSET_TAGS = (); }; };
-		B8751A121C5EFE9A004D3EBC /* ColorsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8751A101C5EFE9A004D3EBC /* ColorsManager.swift */; settings = {ASSET_TAGS = (); }; };
-		B8751A161C5EFFC0004D3EBC /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8751A141C5EFFC0004D3EBC /* ImageManager.swift */; settings = {ASSET_TAGS = (); }; };
-		B8751A171C5EFFC0004D3EBC /* SaveImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8751A151C5EFFC0004D3EBC /* SaveImage.swift */; settings = {ASSET_TAGS = (); }; };
-		B8751A191C5F018D004D3EBC /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8751A181C5F018D004D3EBC /* ColorViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		B8751A1B1C5F0990004D3EBC /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = B8751A1A1C5F0990004D3EBC /* circle.png */; settings = {ASSET_TAGS = (); }; };
+		B87C83C91C5D43A3003FE9E1 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87C83C81C5D43A3003FE9E1 /* GalleryViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		B87C83D01C5D64E3003FE9E1 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B87C83CE1C5D64E3003FE9E1 /* Interface.storyboard */; };
 		B87C83D21C5D64E3003FE9E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B87C83D11C5D64E3003FE9E1 /* Assets.xcassets */; };
 		B87C83D91C5D64E4003FE9E1 /* dropletWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B87C83D81C5D64E4003FE9E1 /* dropletWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -91,12 +86,7 @@
 /* Begin PBXFileReference section */
 		B82A6EDB1C5DB7340064FF90 /* ColorPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
 		B8751A0C1C5ECB17004D3EBC /* InterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InterfaceController.swift; path = "dropletwatch extension/InterfaceController.swift"; sourceTree = SOURCE_ROOT; };
-		B8751A0F1C5EFE9A004D3EBC /* ColorImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorImage.swift; sourceTree = "<group>"; };
-		B8751A101C5EFE9A004D3EBC /* ColorsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsManager.swift; sourceTree = "<group>"; };
-		B8751A141C5EFFC0004D3EBC /* ImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
-		B8751A151C5EFFC0004D3EBC /* SaveImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveImage.swift; sourceTree = "<group>"; };
-		B8751A181C5F018D004D3EBC /* ColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
-		B8751A1A1C5F0990004D3EBC /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = circle.png; path = Assets.xcassets/circle.png; sourceTree = "<group>"; };
+		B87C83C81C5D43A3003FE9E1 /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		B87C83CC1C5D64E3003FE9E1 /* dropletWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dropletWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B87C83CF1C5D64E3003FE9E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		B87C83D11C5D64E3003FE9E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -155,25 +145,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B8751A0E1C5EFE56004D3EBC /* SaveColorData */ = {
-			isa = PBXGroup;
-			children = (
-				B8A384A71C5C164300EE71FB /* AppDelegate.swift */,
-				B8751A0F1C5EFE9A004D3EBC /* ColorImage.swift */,
-				B8751A101C5EFE9A004D3EBC /* ColorsManager.swift */,
-			);
-			name = SaveColorData;
-			sourceTree = "<group>";
-		};
-		B8751A131C5EFF66004D3EBC /* SaveImageData */ = {
-			isa = PBXGroup;
-			children = (
-				B8751A141C5EFFC0004D3EBC /* ImageManager.swift */,
-				B8751A151C5EFFC0004D3EBC /* SaveImage.swift */,
-			);
-			name = SaveImageData;
-			sourceTree = "<group>";
-		};
 		B87C83CD1C5D64E3003FE9E1 /* dropletWatch */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,17 +203,15 @@
 		B8A384A61C5C164300EE71FB /* camera_droplet */ = {
 			isa = PBXGroup;
 			children = (
-				B8751A131C5EFF66004D3EBC /* SaveImageData */,
-				B8751A0E1C5EFE56004D3EBC /* SaveColorData */,
+				B8A384A71C5C164300EE71FB /* AppDelegate.swift */,
 				B8A384A91C5C164300EE71FB /* ViewController.swift */,
 				B82A6EDB1C5DB7340064FF90 /* ColorPickerViewController.swift */,
+				B87C83C81C5D43A3003FE9E1 /* GalleryViewController.swift */,
 				B8A384AB1C5C164300EE71FB /* Main.storyboard */,
 				B8A384AE1C5C164300EE71FB /* Assets.xcassets */,
-				B8751A1A1C5F0990004D3EBC /* circle.png */,
 				B8A384D51C5C174F00EE71FB /* pipette.jpg */,
 				B8A384B01C5C164300EE71FB /* LaunchScreen.storyboard */,
 				B8A384B31C5C164300EE71FB /* Info.plist */,
-				B8751A181C5F018D004D3EBC /* ColorViewController.swift */,
 			);
 			path = camera_droplet;
 			sourceTree = "<group>";
@@ -431,7 +400,6 @@
 			files = (
 				B8A384B21C5C164300EE71FB /* LaunchScreen.storyboard in Resources */,
 				B8A384D61C5C174F00EE71FB /* pipette.jpg in Resources */,
-				B8751A1B1C5F0990004D3EBC /* circle.png in Resources */,
 				B8A384AF1C5C164300EE71FB /* Assets.xcassets in Resources */,
 				B8A384AD1C5C164300EE71FB /* Main.storyboard in Resources */,
 			);
@@ -468,13 +436,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B87C83C91C5D43A3003FE9E1 /* GalleryViewController.swift in Sources */,
 				B8A384AA1C5C164300EE71FB /* ViewController.swift in Sources */,
-				B8751A161C5EFFC0004D3EBC /* ImageManager.swift in Sources */,
-				B8751A191C5F018D004D3EBC /* ColorViewController.swift in Sources */,
 				B82A6EDC1C5DB7340064FF90 /* ColorPickerViewController.swift in Sources */,
-				B8751A171C5EFFC0004D3EBC /* SaveImage.swift in Sources */,
-				B8751A121C5EFE9A004D3EBC /* ColorsManager.swift in Sources */,
-				B8751A111C5EFE9A004D3EBC /* ColorImage.swift in Sources */,
 				B8A384A81C5C164300EE71FB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

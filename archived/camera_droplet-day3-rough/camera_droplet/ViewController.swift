@@ -9,7 +9,6 @@
 import Foundation
 import UIKit
 import WatchConnectivity
-import Social
 
 extension UIView {
     
@@ -116,8 +115,6 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     var session: WCSession!
     
     
-    @IBOutlet weak var share: UIButton!
-    
     @IBOutlet weak var imageViewOutlet: UIView!
     
     @IBOutlet weak var imageTemp: UIImageView!
@@ -127,22 +124,10 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     
     @IBOutlet weak var hexField: UITextField!
     @IBOutlet weak var previewColor: UILabel!
-    
-    @IBOutlet weak var showColor: UIButton!
-    
-    @IBOutlet weak var scrollView: UIScrollView!
-    
-    
-    let myManager = ColorsManager()
-    let imageManager = ImageManager()
-    
     @IBOutlet weak var setColor: UIButton!
     @IBOutlet weak var xval: UISlider!
     @IBOutlet weak var yval: UISlider!
     @IBOutlet weak var camera: UIButton!
-    
-    
-    
     @IBAction func btnClicked(sender: AnyObject) {
         
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.SavedPhotosAlbum){
@@ -169,30 +154,6 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         
         
     }
-    
-    @IBAction func showColor(sender: AnyObject) {
-        
-        
-        
-    }
-    
-    
-    @IBAction func shareF(sender: AnyObject) {
-        
-        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook) {
-            var fbShare:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
-            
-            self.presentViewController(fbShare, animated: true, completion: nil)
-            
-        } else {
-            var alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account to share.", preferredStyle: UIAlertControllerStyle.Alert)
-            
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-            self.presentViewController(alert, animated: true, completion: nil)
-        }
-
-    }
-    
     
     func resizeImage(image: UIImage, newHeight: CGFloat) -> UIImage {
         
@@ -230,7 +191,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         */
     }
     
-    var glass:UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -250,57 +211,14 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
             hexField.text = colorPickerViewController.label
         }
         // Do any additional setup after loading the view, typically from a nib.
-        
-        glass = UIImageView(image: UIImage(named: "circle")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate))
-        glass.center=CGPoint(x: 100, y: 500)
-        let panGesture = UIPanGestureRecognizer(target: self, action: Selector("handlePanGesture:"))
-        self.view.addGestureRecognizer(panGesture)
-        view.addSubview(glass)
-        
-        
-        glass.hidden=true
-        
-        self.scrollViewContent()
-    }
-    
-    func handlePanGesture(gesture:UIPanGestureRecognizer){
-        let point = gesture.locationInView(self.view)
-        glass.center = point
-        glass.center.y = glass.center.y - 80
-        let xPoint = point.x //* 0.91777)
-        let yPoint = point.y
-        let image : UIImage = pickerImage.image!;
-        let color = (self.view).colorOfPoint(CGPointMake(xPoint, yPoint))
-        //let color = image.getPixelColor(CGPointMake(xPoint, yPoint))
-        previewColor.backgroundColor = color
-        glass.tintColor=color
-        hexField.text = color.htmlRGBColor
-        hexWatch = color.htmlRGBColor
-        
-        let colorImage = ColorImage(color: color)
-        
-        myManager.savedColor = colorImage
-        myManager.save()
-
-        
-        
-        
-    
-        switch (gesture.state){
-        case UIGestureRecognizerState.Began:
-            glass.hidden = false
-        case UIGestureRecognizerState.Changed:
-            glass.hidden = false
-        default:
-            glass.hidden=true
-            
-        }
-        
     }
     
     func handleTap(gestureRecognizer: UIGestureRecognizer) {
-
-
+        print("You tapped at \(gestureRecognizer.locationInView(self.view))")
+        print("You tapped at \(gestureRecognizer.locationInView(view))")
+        print(pickerImage.image!.size.height)
+        print(pickerImage.image!.size.width)
+        //imageViewOutlet.frame = CGRectMake(0 , 0, pickerImage.image!.size.width, pickerImage.image!.size.height)
         let point = gestureRecognizer.locationInView(self.view)
         let xPoint = point.x //* 0.91777)
         let yPoint = point.y
@@ -308,38 +226,14 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         let color = (self.view).colorOfPoint(CGPointMake(xPoint, yPoint))
         //let color = image.getPixelColor(CGPointMake(xPoint, yPoint))
         previewColor.backgroundColor = color
-        glass.tintColor=color
         hexField.text = color.htmlRGBColor
         hexWatch = color.htmlRGBColor
-        
-        let colorImage = ColorImage(color: color)
-        
-        myManager.savedColor = colorImage
-        myManager.save()
     }
     
     func changeColorText2(text: String) {
         if let hexField = self.hexField {
             hexField.text = text
         }
-    }
-    
-    func scrollViewContent() {
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.SavedPhotosAlbum){
-            print("Button capture")
-            
-            
-            imagePicker.delegate = self
-            imagePicker.sourceType = UIImagePickerControllerSourceType.SavedPhotosAlbum;
-            imagePicker.allowsEditing = false
-            
-        }
-        
-        scrollView.addSubview(imagePicker.view)
-        scrollView.contentSize = CGSizeMake(650, 500)
-        imagePicker.view.frame = CGRectMake(0, 0, 650, 500)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
