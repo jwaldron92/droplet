@@ -1,0 +1,824 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B82A6EDC1C5DB7340064FF90 /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82A6EDB1C5DB7340064FF90 /* ColorPickerViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		B8751A0D1C5ECB17004D3EBC /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8751A0C1C5ECB17004D3EBC /* InterfaceController.swift */; settings = {ASSET_TAGS = (); }; };
+		B8751A111C5EFE9A004D3EBC /* ColorImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8751A0F1C5EFE9A004D3EBC /* ColorImage.swift */; settings = {ASSET_TAGS = (); }; };
+		B8751A121C5EFE9A004D3EBC /* ColorsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8751A101C5EFE9A004D3EBC /* ColorsManager.swift */; settings = {ASSET_TAGS = (); }; };
+		B8751A161C5EFFC0004D3EBC /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8751A141C5EFFC0004D3EBC /* ImageManager.swift */; settings = {ASSET_TAGS = (); }; };
+		B8751A171C5EFFC0004D3EBC /* SaveImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8751A151C5EFFC0004D3EBC /* SaveImage.swift */; settings = {ASSET_TAGS = (); }; };
+		B8751A191C5F018D004D3EBC /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8751A181C5F018D004D3EBC /* ColorViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		B8751A1B1C5F0990004D3EBC /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = B8751A1A1C5F0990004D3EBC /* circle.png */; settings = {ASSET_TAGS = (); }; };
+		B87C83D01C5D64E3003FE9E1 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B87C83CE1C5D64E3003FE9E1 /* Interface.storyboard */; };
+		B87C83D21C5D64E3003FE9E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B87C83D11C5D64E3003FE9E1 /* Assets.xcassets */; };
+		B87C83D91C5D64E4003FE9E1 /* dropletWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B87C83D81C5D64E4003FE9E1 /* dropletWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B87C83E21C5D64E4003FE9E1 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87C83E11C5D64E4003FE9E1 /* ExtensionDelegate.swift */; };
+		B87C83E41C5D64E4003FE9E1 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87C83E31C5D64E4003FE9E1 /* NotificationController.swift */; };
+		B87C83E61C5D64E4003FE9E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B87C83E51C5D64E4003FE9E1 /* Assets.xcassets */; };
+		B87C83EA1C5D64E4003FE9E1 /* dropletWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B87C83CC1C5D64E3003FE9E1 /* dropletWatch.app */; };
+		B8A384A81C5C164300EE71FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A384A71C5C164300EE71FB /* AppDelegate.swift */; };
+		B8A384AA1C5C164300EE71FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A384A91C5C164300EE71FB /* ViewController.swift */; };
+		B8A384AD1C5C164300EE71FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8A384AB1C5C164300EE71FB /* Main.storyboard */; };
+		B8A384AF1C5C164300EE71FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8A384AE1C5C164300EE71FB /* Assets.xcassets */; };
+		B8A384B21C5C164300EE71FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8A384B01C5C164300EE71FB /* LaunchScreen.storyboard */; };
+		B8A384BD1C5C164300EE71FB /* camera_dropletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A384BC1C5C164300EE71FB /* camera_dropletTests.swift */; };
+		B8A384C81C5C164300EE71FB /* camera_dropletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A384C71C5C164300EE71FB /* camera_dropletUITests.swift */; };
+		B8A384D61C5C174F00EE71FB /* pipette.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B8A384D51C5C174F00EE71FB /* pipette.jpg */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B87C83DA1C5D64E4003FE9E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8A3849C1C5C164300EE71FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B87C83D71C5D64E4003FE9E1;
+			remoteInfo = "dropletWatch Extension";
+		};
+		B87C83E81C5D64E4003FE9E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8A3849C1C5C164300EE71FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B87C83CB1C5D64E3003FE9E1;
+			remoteInfo = dropletWatch;
+		};
+		B8A384B91C5C164300EE71FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8A3849C1C5C164300EE71FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8A384A31C5C164300EE71FB;
+			remoteInfo = camera_droplet;
+		};
+		B8A384C41C5C164300EE71FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8A3849C1C5C164300EE71FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8A384A31C5C164300EE71FB;
+			remoteInfo = camera_droplet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B87C83EE1C5D64E4003FE9E1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B87C83D91C5D64E4003FE9E1 /* dropletWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B87C83F21C5D64E4003FE9E1 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B87C83EA1C5D64E4003FE9E1 /* dropletWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B82A6EDB1C5DB7340064FF90 /* ColorPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
+		B8751A0C1C5ECB17004D3EBC /* InterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InterfaceController.swift; path = "dropletwatch extension/InterfaceController.swift"; sourceTree = SOURCE_ROOT; };
+		B8751A0F1C5EFE9A004D3EBC /* ColorImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorImage.swift; sourceTree = "<group>"; };
+		B8751A101C5EFE9A004D3EBC /* ColorsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsManager.swift; sourceTree = "<group>"; };
+		B8751A141C5EFFC0004D3EBC /* ImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		B8751A151C5EFFC0004D3EBC /* SaveImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveImage.swift; sourceTree = "<group>"; };
+		B8751A181C5F018D004D3EBC /* ColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
+		B8751A1A1C5F0990004D3EBC /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = circle.png; path = Assets.xcassets/circle.png; sourceTree = "<group>"; };
+		B87C83CC1C5D64E3003FE9E1 /* dropletWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dropletWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B87C83CF1C5D64E3003FE9E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		B87C83D11C5D64E3003FE9E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B87C83D31C5D64E3003FE9E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B87C83D81C5D64E4003FE9E1 /* dropletWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "dropletWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B87C83DE1C5D64E4003FE9E1 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		B87C83E11C5D64E4003FE9E1 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		B87C83E31C5D64E4003FE9E1 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		B87C83E51C5D64E4003FE9E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B87C83E71C5D64E4003FE9E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8A384A41C5C164300EE71FB /* camera_droplet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = camera_droplet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8A384A71C5C164300EE71FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B8A384A91C5C164300EE71FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B8A384AC1C5C164300EE71FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B8A384AE1C5C164300EE71FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B8A384B11C5C164300EE71FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B8A384B31C5C164300EE71FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8A384B81C5C164300EE71FB /* camera_dropletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = camera_dropletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8A384BC1C5C164300EE71FB /* camera_dropletTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = camera_dropletTests.swift; sourceTree = "<group>"; };
+		B8A384BE1C5C164300EE71FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8A384C31C5C164300EE71FB /* camera_dropletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = camera_dropletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8A384C71C5C164300EE71FB /* camera_dropletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = camera_dropletUITests.swift; sourceTree = "<group>"; };
+		B8A384C91C5C164300EE71FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8A384D51C5C174F00EE71FB /* pipette.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pipette.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B87C83D51C5D64E4003FE9E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8A384A11C5C164300EE71FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8A384B51C5C164300EE71FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8A384C01C5C164300EE71FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B8751A0E1C5EFE56004D3EBC /* SaveColorData */ = {
+			isa = PBXGroup;
+			children = (
+				B8A384A71C5C164300EE71FB /* AppDelegate.swift */,
+				B8751A0F1C5EFE9A004D3EBC /* ColorImage.swift */,
+				B8751A101C5EFE9A004D3EBC /* ColorsManager.swift */,
+			);
+			name = SaveColorData;
+			sourceTree = "<group>";
+		};
+		B8751A131C5EFF66004D3EBC /* SaveImageData */ = {
+			isa = PBXGroup;
+			children = (
+				B8751A141C5EFFC0004D3EBC /* ImageManager.swift */,
+				B8751A151C5EFFC0004D3EBC /* SaveImage.swift */,
+			);
+			name = SaveImageData;
+			sourceTree = "<group>";
+		};
+		B87C83CD1C5D64E3003FE9E1 /* dropletWatch */ = {
+			isa = PBXGroup;
+			children = (
+				B87C83CE1C5D64E3003FE9E1 /* Interface.storyboard */,
+				B87C83D11C5D64E3003FE9E1 /* Assets.xcassets */,
+				B87C83D31C5D64E3003FE9E1 /* Info.plist */,
+			);
+			path = dropletWatch;
+			sourceTree = "<group>";
+		};
+		B87C83DC1C5D64E4003FE9E1 /* dropletWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B8751A0C1C5ECB17004D3EBC /* InterfaceController.swift */,
+				B87C83E11C5D64E4003FE9E1 /* ExtensionDelegate.swift */,
+				B87C83E31C5D64E4003FE9E1 /* NotificationController.swift */,
+				B87C83E51C5D64E4003FE9E1 /* Assets.xcassets */,
+				B87C83E71C5D64E4003FE9E1 /* Info.plist */,
+				B87C83DD1C5D64E4003FE9E1 /* Supporting Files */,
+			);
+			path = "dropletWatch Extension";
+			sourceTree = "<group>";
+		};
+		B87C83DD1C5D64E4003FE9E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B87C83DE1C5D64E4003FE9E1 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B8A3849B1C5C164300EE71FB = {
+			isa = PBXGroup;
+			children = (
+				B8A384A61C5C164300EE71FB /* camera_droplet */,
+				B8A384BB1C5C164300EE71FB /* camera_dropletTests */,
+				B8A384C61C5C164300EE71FB /* camera_dropletUITests */,
+				B87C83CD1C5D64E3003FE9E1 /* dropletWatch */,
+				B87C83DC1C5D64E4003FE9E1 /* dropletWatch Extension */,
+				B8A384A51C5C164300EE71FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B8A384A51C5C164300EE71FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8A384A41C5C164300EE71FB /* camera_droplet.app */,
+				B8A384B81C5C164300EE71FB /* camera_dropletTests.xctest */,
+				B8A384C31C5C164300EE71FB /* camera_dropletUITests.xctest */,
+				B87C83CC1C5D64E3003FE9E1 /* dropletWatch.app */,
+				B87C83D81C5D64E4003FE9E1 /* dropletWatch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B8A384A61C5C164300EE71FB /* camera_droplet */ = {
+			isa = PBXGroup;
+			children = (
+				B8751A131C5EFF66004D3EBC /* SaveImageData */,
+				B8751A0E1C5EFE56004D3EBC /* SaveColorData */,
+				B8A384A91C5C164300EE71FB /* ViewController.swift */,
+				B82A6EDB1C5DB7340064FF90 /* ColorPickerViewController.swift */,
+				B8A384AB1C5C164300EE71FB /* Main.storyboard */,
+				B8A384AE1C5C164300EE71FB /* Assets.xcassets */,
+				B8751A1A1C5F0990004D3EBC /* circle.png */,
+				B8A384D51C5C174F00EE71FB /* pipette.jpg */,
+				B8A384B01C5C164300EE71FB /* LaunchScreen.storyboard */,
+				B8A384B31C5C164300EE71FB /* Info.plist */,
+				B8751A181C5F018D004D3EBC /* ColorViewController.swift */,
+			);
+			path = camera_droplet;
+			sourceTree = "<group>";
+		};
+		B8A384BB1C5C164300EE71FB /* camera_dropletTests */ = {
+			isa = PBXGroup;
+			children = (
+				B8A384BC1C5C164300EE71FB /* camera_dropletTests.swift */,
+				B8A384BE1C5C164300EE71FB /* Info.plist */,
+			);
+			path = camera_dropletTests;
+			sourceTree = "<group>";
+		};
+		B8A384C61C5C164300EE71FB /* camera_dropletUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B8A384C71C5C164300EE71FB /* camera_dropletUITests.swift */,
+				B8A384C91C5C164300EE71FB /* Info.plist */,
+			);
+			path = camera_dropletUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B87C83CB1C5D64E3003FE9E1 /* dropletWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B87C83EF1C5D64E4003FE9E1 /* Build configuration list for PBXNativeTarget "dropletWatch" */;
+			buildPhases = (
+				B87C83CA1C5D64E3003FE9E1 /* Resources */,
+				B87C83EE1C5D64E4003FE9E1 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B87C83DB1C5D64E4003FE9E1 /* PBXTargetDependency */,
+			);
+			name = dropletWatch;
+			productName = dropletWatch;
+			productReference = B87C83CC1C5D64E3003FE9E1 /* dropletWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		B87C83D71C5D64E4003FE9E1 /* dropletWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B87C83EB1C5D64E4003FE9E1 /* Build configuration list for PBXNativeTarget "dropletWatch Extension" */;
+			buildPhases = (
+				B87C83D41C5D64E4003FE9E1 /* Sources */,
+				B87C83D51C5D64E4003FE9E1 /* Frameworks */,
+				B87C83D61C5D64E4003FE9E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "dropletWatch Extension";
+			productName = "dropletWatch Extension";
+			productReference = B87C83D81C5D64E4003FE9E1 /* dropletWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		B8A384A31C5C164300EE71FB /* camera_droplet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8A384CC1C5C164300EE71FB /* Build configuration list for PBXNativeTarget "camera_droplet" */;
+			buildPhases = (
+				B8A384A01C5C164300EE71FB /* Sources */,
+				B8A384A11C5C164300EE71FB /* Frameworks */,
+				B8A384A21C5C164300EE71FB /* Resources */,
+				B87C83F21C5D64E4003FE9E1 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B87C83E91C5D64E4003FE9E1 /* PBXTargetDependency */,
+			);
+			name = camera_droplet;
+			productName = camera_droplet;
+			productReference = B8A384A41C5C164300EE71FB /* camera_droplet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B8A384B71C5C164300EE71FB /* camera_dropletTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8A384CF1C5C164300EE71FB /* Build configuration list for PBXNativeTarget "camera_dropletTests" */;
+			buildPhases = (
+				B8A384B41C5C164300EE71FB /* Sources */,
+				B8A384B51C5C164300EE71FB /* Frameworks */,
+				B8A384B61C5C164300EE71FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8A384BA1C5C164300EE71FB /* PBXTargetDependency */,
+			);
+			name = camera_dropletTests;
+			productName = camera_dropletTests;
+			productReference = B8A384B81C5C164300EE71FB /* camera_dropletTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B8A384C21C5C164300EE71FB /* camera_dropletUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8A384D21C5C164300EE71FB /* Build configuration list for PBXNativeTarget "camera_dropletUITests" */;
+			buildPhases = (
+				B8A384BF1C5C164300EE71FB /* Sources */,
+				B8A384C01C5C164300EE71FB /* Frameworks */,
+				B8A384C11C5C164300EE71FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8A384C51C5C164300EE71FB /* PBXTargetDependency */,
+			);
+			name = camera_dropletUITests;
+			productName = camera_dropletUITests;
+			productReference = B8A384C31C5C164300EE71FB /* camera_dropletUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B8A3849C1C5C164300EE71FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Woof Warrior";
+				TargetAttributes = {
+					B87C83CB1C5D64E3003FE9E1 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					B87C83D71C5D64E4003FE9E1 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					B8A384A31C5C164300EE71FB = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					B8A384B71C5C164300EE71FB = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = B8A384A31C5C164300EE71FB;
+					};
+					B8A384C21C5C164300EE71FB = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = B8A384A31C5C164300EE71FB;
+					};
+				};
+			};
+			buildConfigurationList = B8A3849F1C5C164300EE71FB /* Build configuration list for PBXProject "camera_droplet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B8A3849B1C5C164300EE71FB;
+			productRefGroup = B8A384A51C5C164300EE71FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B8A384A31C5C164300EE71FB /* camera_droplet */,
+				B8A384B71C5C164300EE71FB /* camera_dropletTests */,
+				B8A384C21C5C164300EE71FB /* camera_dropletUITests */,
+				B87C83CB1C5D64E3003FE9E1 /* dropletWatch */,
+				B87C83D71C5D64E4003FE9E1 /* dropletWatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B87C83CA1C5D64E3003FE9E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B87C83D21C5D64E3003FE9E1 /* Assets.xcassets in Resources */,
+				B87C83D01C5D64E3003FE9E1 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B87C83D61C5D64E4003FE9E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B87C83E61C5D64E4003FE9E1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8A384A21C5C164300EE71FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8A384B21C5C164300EE71FB /* LaunchScreen.storyboard in Resources */,
+				B8A384D61C5C174F00EE71FB /* pipette.jpg in Resources */,
+				B8751A1B1C5F0990004D3EBC /* circle.png in Resources */,
+				B8A384AF1C5C164300EE71FB /* Assets.xcassets in Resources */,
+				B8A384AD1C5C164300EE71FB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8A384B61C5C164300EE71FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8A384C11C5C164300EE71FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B87C83D41C5D64E4003FE9E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8751A0D1C5ECB17004D3EBC /* InterfaceController.swift in Sources */,
+				B87C83E41C5D64E4003FE9E1 /* NotificationController.swift in Sources */,
+				B87C83E21C5D64E4003FE9E1 /* ExtensionDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8A384A01C5C164300EE71FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8A384AA1C5C164300EE71FB /* ViewController.swift in Sources */,
+				B8751A161C5EFFC0004D3EBC /* ImageManager.swift in Sources */,
+				B8751A191C5F018D004D3EBC /* ColorViewController.swift in Sources */,
+				B82A6EDC1C5DB7340064FF90 /* ColorPickerViewController.swift in Sources */,
+				B8751A171C5EFFC0004D3EBC /* SaveImage.swift in Sources */,
+				B8751A121C5EFE9A004D3EBC /* ColorsManager.swift in Sources */,
+				B8751A111C5EFE9A004D3EBC /* ColorImage.swift in Sources */,
+				B8A384A81C5C164300EE71FB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8A384B41C5C164300EE71FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8A384BD1C5C164300EE71FB /* camera_dropletTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8A384BF1C5C164300EE71FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8A384C81C5C164300EE71FB /* camera_dropletUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B87C83DB1C5D64E4003FE9E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B87C83D71C5D64E4003FE9E1 /* dropletWatch Extension */;
+			targetProxy = B87C83DA1C5D64E4003FE9E1 /* PBXContainerItemProxy */;
+		};
+		B87C83E91C5D64E4003FE9E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B87C83CB1C5D64E3003FE9E1 /* dropletWatch */;
+			targetProxy = B87C83E81C5D64E4003FE9E1 /* PBXContainerItemProxy */;
+		};
+		B8A384BA1C5C164300EE71FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8A384A31C5C164300EE71FB /* camera_droplet */;
+			targetProxy = B8A384B91C5C164300EE71FB /* PBXContainerItemProxy */;
+		};
+		B8A384C51C5C164300EE71FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8A384A31C5C164300EE71FB /* camera_droplet */;
+			targetProxy = B8A384C41C5C164300EE71FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B87C83CE1C5D64E3003FE9E1 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B87C83CF1C5D64E3003FE9E1 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		B8A384AB1C5C164300EE71FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8A384AC1C5C164300EE71FB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B8A384B01C5C164300EE71FB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8A384B11C5C164300EE71FB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B87C83EC1C5D64E4003FE9E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "dropletWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.woofwarrior.camera-droplet.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		B87C83ED1C5D64E4003FE9E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "dropletWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.woofwarrior.camera-droplet.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		B87C83F01C5D64E4003FE9E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = dropletWatch_Extension;
+				INFOPLIST_FILE = dropletWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.woofwarrior.camera-droplet.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		B87C83F11C5D64E4003FE9E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = dropletWatch_Extension;
+				INFOPLIST_FILE = dropletWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.woofwarrior.camera-droplet.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		B8A384CA1C5C164300EE71FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B8A384CB1C5C164300EE71FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B8A384CD1C5C164300EE71FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = camera_droplet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.woofwarrior.camera-droplet";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B8A384CE1C5C164300EE71FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = camera_droplet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.woofwarrior.camera-droplet";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B8A384D01C5C164300EE71FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = camera_dropletTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.woofwarrior.camera-dropletTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/camera_droplet.app/camera_droplet";
+			};
+			name = Debug;
+		};
+		B8A384D11C5C164300EE71FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = camera_dropletTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.woofwarrior.camera-dropletTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/camera_droplet.app/camera_droplet";
+			};
+			name = Release;
+		};
+		B8A384D31C5C164300EE71FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = camera_dropletUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.woofwarrior.camera-dropletUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = camera_droplet;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		B8A384D41C5C164300EE71FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = camera_dropletUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.woofwarrior.camera-dropletUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = camera_droplet;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B87C83EB1C5D64E4003FE9E1 /* Build configuration list for PBXNativeTarget "dropletWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B87C83EC1C5D64E4003FE9E1 /* Debug */,
+				B87C83ED1C5D64E4003FE9E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B87C83EF1C5D64E4003FE9E1 /* Build configuration list for PBXNativeTarget "dropletWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B87C83F01C5D64E4003FE9E1 /* Debug */,
+				B87C83F11C5D64E4003FE9E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8A3849F1C5C164300EE71FB /* Build configuration list for PBXProject "camera_droplet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8A384CA1C5C164300EE71FB /* Debug */,
+				B8A384CB1C5C164300EE71FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8A384CC1C5C164300EE71FB /* Build configuration list for PBXNativeTarget "camera_droplet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8A384CD1C5C164300EE71FB /* Debug */,
+				B8A384CE1C5C164300EE71FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8A384CF1C5C164300EE71FB /* Build configuration list for PBXNativeTarget "camera_dropletTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8A384D01C5C164300EE71FB /* Debug */,
+				B8A384D11C5C164300EE71FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8A384D21C5C164300EE71FB /* Build configuration list for PBXNativeTarget "camera_dropletUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8A384D31C5C164300EE71FB /* Debug */,
+				B8A384D41C5C164300EE71FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B8A3849C1C5C164300EE71FB /* Project object */;
+}
