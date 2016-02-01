@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Notification - dropletWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>camera_droplet.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>dropletWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>B87C83CB1C5D64E3003FE9E1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B8A384A31C5C164300EE71FB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B8A384B71C5C164300EE71FB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B8A384C21C5C164300EE71FB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

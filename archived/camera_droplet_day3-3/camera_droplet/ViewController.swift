@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit
-import WatchConnectivity
 
 extension UIView {
     
@@ -105,15 +104,11 @@ extension UIImage{
         }
     }
 
-class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, WCSessionDelegate {
-    
+class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     var imagePicker = UIImagePickerController()
     
     var colorPickerViewController: UIViewController!
-    var hexData = [String]()
-    private var hexWatch = "ff4000"
-    var session: WCSession!
-    
+
     
     @IBOutlet weak var imageViewOutlet: UIView!
     
@@ -122,8 +117,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     @IBOutlet weak var pickerImage: UIImageView!
     @IBOutlet weak var capture: UIButton!
     
-    @IBOutlet weak var hexField: UITextField!
-    @IBOutlet weak var previewColor: UILabel!
+    @IBOutlet weak var colorText2: UILabel!
     @IBOutlet weak var setColor: UIButton!
     @IBOutlet weak var xval: UISlider!
     @IBOutlet weak var yval: UISlider!
@@ -171,16 +165,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     @IBOutlet weak var colorText: UITextField!
     
     @IBAction func setrgb(sender: AnyObject) {
-        let applicationData = ["hexValue":String(hexWatch)]
         
-        session.sendMessage(applicationData, replyHandler: {(_: [String : AnyObject]) -> Void in
-            // handle reply from iPhone app here
-            }, errorHandler: {(error ) -> Void in
-                // catch any errors here
-        }) 
-        
-        
-        /*
         //Make sure only 1x image is set
         let image : UIImage = imageTemp.image!;
         //Make sure point is within the image
@@ -188,27 +173,18 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         colorText.backgroundColor = color;
         let myRedHueWebColor = String(color.htmlRGBColor);
         colorText2.text = myRedHueWebColor;
-        */
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        if (WCSession.isSupported()) {
-            session = WCSession.defaultSession()
-            session.delegate = self;
-            session.activateSession()
-        }
-        
-        
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: "handleTap:")
         self.imageViewOutlet.addGestureRecognizer(gestureRecognizer)
         
         
         if let colorPickerViewController = self.colorPickerViewController as? ColorPickerViewController {
-            hexField.text = colorPickerViewController.label
+            colorText2.text = colorPickerViewController.label
         }
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -225,14 +201,13 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         let image : UIImage = pickerImage.image!;
         let color = (self.view).colorOfPoint(CGPointMake(xPoint, yPoint))
         //let color = image.getPixelColor(CGPointMake(xPoint, yPoint))
-        previewColor.backgroundColor = color
-        hexField.text = color.htmlRGBColor
-        hexWatch = color.htmlRGBColor
+        colorText.backgroundColor = color;
+        colorText2.text = color.htmlRGBColor
     }
     
     func changeColorText2(text: String) {
-        if let hexField = self.hexField {
-            hexField.text = text
+        if let colorText2 = self.colorText2 {
+            colorText2.text = text
         }
     }
     

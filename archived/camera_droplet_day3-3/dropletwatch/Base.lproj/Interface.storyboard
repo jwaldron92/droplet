@@ -8,15 +8,15 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="dropletWatch_Extension">
+                <controller id="AgC-eL-Hgc">
                     <items>
-                        <button width="136" height="210.5" alignment="left" id="qzy-nf-ant">
-                            <color key="backgroundColor" red="0.12298761609907116" green="0.90588235294117647" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
-                        </button>
+                        <label width="136" height="136" alignment="center" verticalAlignment="center" text="This Color" textAlignment="center" numberOfLines="2" id="TKT-ln-uW9">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle1"/>
+                        </label>
                     </items>
                     <color key="backgroundColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
-                        <outlet property="colorMatch" destination="qzy-nf-ant" id="bR9-PI-1fs"/>
+                        <outlet property="colorMatch" destination="TKT-ln-uW9" id="4z1-iU-2RE"/>
                     </connections>
                 </controller>
             </objects>
