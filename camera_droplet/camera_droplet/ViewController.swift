@@ -132,7 +132,6 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     
     @IBOutlet weak var scrollView: UIScrollView!
     
-    @IBOutlet weak var gallery: UIButton!
     
     let myManager = ColorsManager()
     let imageManager = ImageManager()
@@ -210,7 +209,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     
     @IBOutlet weak var colorText: UITextField!
     
-    @IBAction func gallery(sender: AnyObject) {
+    /*@IBAction func gallery(sender: AnyObject) {
         
         
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.SavedPhotosAlbum){
@@ -224,7 +223,25 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         }
 
 
+    }*/
+    
+    
+    
+    @IBAction func takePhoto(sender: AnyObject) {
+    
+            if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera){
+            print("Button capture")
+            
+            
+            imagePicker.delegate = self
+            imagePicker.sourceType = UIImagePickerControllerSourceType.Camera;
+            imagePicker.allowsEditing = false
+            
+            [self .presentViewController(imagePicker, animated: true, completion: nil)];
+            
+            }
     }
+    
     @IBAction func setrgb(sender: AnyObject) {
         let applicationData = ["hexValue":String(hexWatch)]
         

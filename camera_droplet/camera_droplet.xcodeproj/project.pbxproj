@@ -7,30 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B82A6EDC1C5DB7340064FF90 /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82A6EDB1C5DB7340064FF90 /* ColorPickerViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		B83A62611C5F20270074DA03 /* eyedropper.png in Resources */ = {isa = PBXBuildFile; fileRef = B83A62601C5F20270074DA03 /* eyedropper.png */; settings = {ASSET_TAGS = (); }; };
-		B8751A0D1C5ECB17004D3EBC /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8751A0C1C5ECB17004D3EBC /* InterfaceController.swift */; settings = {ASSET_TAGS = (); }; };
-		B8751A111C5EFE9A004D3EBC /* ColorImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8751A0F1C5EFE9A004D3EBC /* ColorImage.swift */; settings = {ASSET_TAGS = (); }; };
-		B8751A121C5EFE9A004D3EBC /* ColorsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8751A101C5EFE9A004D3EBC /* ColorsManager.swift */; settings = {ASSET_TAGS = (); }; };
-		B8751A161C5EFFC0004D3EBC /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8751A141C5EFFC0004D3EBC /* ImageManager.swift */; settings = {ASSET_TAGS = (); }; };
-		B8751A171C5EFFC0004D3EBC /* SaveImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8751A151C5EFFC0004D3EBC /* SaveImage.swift */; settings = {ASSET_TAGS = (); }; };
-		B8751A191C5F018D004D3EBC /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8751A181C5F018D004D3EBC /* ColorViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		B8751A1B1C5F0990004D3EBC /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = B8751A1A1C5F0990004D3EBC /* circle.png */; settings = {ASSET_TAGS = (); }; };
+		B82A6EDC1C5DB7340064FF90 /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82A6EDB1C5DB7340064FF90 /* ColorPickerViewController.swift */; };
+		B83A62611C5F20270074DA03 /* eyedropper.png in Resources */ = {isa = PBXBuildFile; fileRef = B83A62601C5F20270074DA03 /* eyedropper.png */; };
+		B8751A0D1C5ECB17004D3EBC /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8751A0C1C5ECB17004D3EBC /* InterfaceController.swift */; };
+		B8751A111C5EFE9A004D3EBC /* ColorImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8751A0F1C5EFE9A004D3EBC /* ColorImage.swift */; };
+		B8751A121C5EFE9A004D3EBC /* ColorsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8751A101C5EFE9A004D3EBC /* ColorsManager.swift */; };
+		B8751A161C5EFFC0004D3EBC /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8751A141C5EFFC0004D3EBC /* ImageManager.swift */; };
+		B8751A171C5EFFC0004D3EBC /* SaveImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8751A151C5EFFC0004D3EBC /* SaveImage.swift */; };
+		B8751A191C5F018D004D3EBC /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8751A181C5F018D004D3EBC /* ColorViewController.swift */; };
 		B87C83D01C5D64E3003FE9E1 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B87C83CE1C5D64E3003FE9E1 /* Interface.storyboard */; };
-		B87C83D21C5D64E3003FE9E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B87C83D11C5D64E3003FE9E1 /* Assets.xcassets */; };
 		B87C83D91C5D64E4003FE9E1 /* dropletWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B87C83D81C5D64E4003FE9E1 /* dropletWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B87C83E21C5D64E4003FE9E1 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87C83E11C5D64E4003FE9E1 /* ExtensionDelegate.swift */; };
 		B87C83E41C5D64E4003FE9E1 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87C83E31C5D64E4003FE9E1 /* NotificationController.swift */; };
-		B87C83E61C5D64E4003FE9E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B87C83E51C5D64E4003FE9E1 /* Assets.xcassets */; };
 		B87C83EA1C5D64E4003FE9E1 /* dropletWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B87C83CC1C5D64E3003FE9E1 /* dropletWatch.app */; };
 		B8A384A81C5C164300EE71FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A384A71C5C164300EE71FB /* AppDelegate.swift */; };
 		B8A384AA1C5C164300EE71FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A384A91C5C164300EE71FB /* ViewController.swift */; };
 		B8A384AD1C5C164300EE71FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8A384AB1C5C164300EE71FB /* Main.storyboard */; };
-		B8A384AF1C5C164300EE71FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8A384AE1C5C164300EE71FB /* Assets.xcassets */; };
 		B8A384B21C5C164300EE71FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8A384B01C5C164300EE71FB /* LaunchScreen.storyboard */; };
 		B8A384BD1C5C164300EE71FB /* camera_dropletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A384BC1C5C164300EE71FB /* camera_dropletTests.swift */; };
 		B8A384C81C5C164300EE71FB /* camera_dropletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A384C71C5C164300EE71FB /* camera_dropletUITests.swift */; };
-		B8A384D61C5C174F00EE71FB /* pipette.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B8A384D51C5C174F00EE71FB /* pipette.jpg */; settings = {ASSET_TAGS = (); }; };
+		B8A384D61C5C174F00EE71FB /* pipette.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B8A384D51C5C174F00EE71FB /* pipette.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,22 +94,18 @@
 		B8751A141C5EFFC0004D3EBC /* ImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 		B8751A151C5EFFC0004D3EBC /* SaveImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveImage.swift; sourceTree = "<group>"; };
 		B8751A181C5F018D004D3EBC /* ColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
-		B8751A1A1C5F0990004D3EBC /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = circle.png; path = Assets.xcassets/circle.png; sourceTree = "<group>"; };
 		B87C83CC1C5D64E3003FE9E1 /* dropletWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dropletWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B87C83CF1C5D64E3003FE9E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		B87C83D11C5D64E3003FE9E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B87C83D31C5D64E3003FE9E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B87C83D81C5D64E4003FE9E1 /* dropletWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "dropletWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B87C83DE1C5D64E4003FE9E1 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		B87C83E11C5D64E4003FE9E1 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		B87C83E31C5D64E4003FE9E1 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
-		B87C83E51C5D64E4003FE9E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B87C83E71C5D64E4003FE9E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8A384A41C5C164300EE71FB /* camera_droplet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = camera_droplet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8A384A71C5C164300EE71FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8A384A91C5C164300EE71FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B8A384AC1C5C164300EE71FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B8A384AE1C5C164300EE71FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8A384B11C5C164300EE71FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8A384B31C5C164300EE71FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8A384B81C5C164300EE71FB /* camera_dropletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = camera_dropletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -180,7 +172,6 @@
 			isa = PBXGroup;
 			children = (
 				B87C83CE1C5D64E3003FE9E1 /* Interface.storyboard */,
-				B87C83D11C5D64E3003FE9E1 /* Assets.xcassets */,
 				B87C83D31C5D64E3003FE9E1 /* Info.plist */,
 			);
 			path = dropletWatch;
@@ -192,7 +183,6 @@
 				B8751A0C1C5ECB17004D3EBC /* InterfaceController.swift */,
 				B87C83E11C5D64E4003FE9E1 /* ExtensionDelegate.swift */,
 				B87C83E31C5D64E4003FE9E1 /* NotificationController.swift */,
-				B87C83E51C5D64E4003FE9E1 /* Assets.xcassets */,
 				B87C83E71C5D64E4003FE9E1 /* Info.plist */,
 				B87C83DD1C5D64E4003FE9E1 /* Supporting Files */,
 			);
@@ -239,8 +229,6 @@
 				B8A384A91C5C164300EE71FB /* ViewController.swift */,
 				B82A6EDB1C5DB7340064FF90 /* ColorPickerViewController.swift */,
 				B8A384AB1C5C164300EE71FB /* Main.storyboard */,
-				B8A384AE1C5C164300EE71FB /* Assets.xcassets */,
-				B8751A1A1C5F0990004D3EBC /* circle.png */,
 				B83A62601C5F20270074DA03 /* eyedropper.png */,
 				B8A384D51C5C174F00EE71FB /* pipette.jpg */,
 				B8A384B01C5C164300EE71FB /* LaunchScreen.storyboard */,
@@ -415,7 +403,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B87C83D21C5D64E3003FE9E1 /* Assets.xcassets in Resources */,
 				B87C83D01C5D64E3003FE9E1 /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,7 +411,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B87C83E61C5D64E4003FE9E1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,8 +421,6 @@
 				B83A62611C5F20270074DA03 /* eyedropper.png in Resources */,
 				B8A384B21C5C164300EE71FB /* LaunchScreen.storyboard in Resources */,
 				B8A384D61C5C174F00EE71FB /* pipette.jpg in Resources */,
-				B8751A1B1C5F0990004D3EBC /* circle.png in Resources */,
-				B8A384AF1C5C164300EE71FB /* Assets.xcassets in Resources */,
 				B8A384AD1C5C164300EE71FB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

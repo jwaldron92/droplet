@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -85,14 +85,14 @@
                                             <action selector="setrgb:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uPU-uR-Ibv"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3eE-gp-qb8">
-                                        <rect key="frame" x="91" y="104" width="150" height="30"/>
-                                        <color key="backgroundColor" red="0.90588235289999997" green="0.086285752909999999" blue="0.1366792496" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Gallery">
-                                            <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdO-xi-aZW">
+                                        <rect key="frame" x="91" y="99" width="150" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.1199872273" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Take Photo">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="gallery:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zJd-YS-afe"/>
+                                            <action selector="takePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vRG-rY-xHb"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -103,14 +103,9 @@
                                     <constraint firstItem="8Qh-aI-ABw" firstAttribute="leading" secondItem="KXx-9M-HUY" secondAttribute="leading" constant="91" id="4Tz-c3-RZX"/>
                                     <constraint firstItem="8Qh-aI-ABw" firstAttribute="height" secondItem="YFx-N7-OWy" secondAttribute="height" id="8kx-tv-uY5"/>
                                     <constraint firstItem="YFx-N7-OWy" firstAttribute="top" secondItem="KXx-9M-HUY" secondAttribute="top" constant="45" id="ACW-6K-TUs"/>
-                                    <constraint firstItem="8Qh-aI-ABw" firstAttribute="height" secondItem="3eE-gp-qb8" secondAttribute="height" id="BqA-0x-Ti4"/>
-                                    <constraint firstAttribute="trailing" secondItem="3eE-gp-qb8" secondAttribute="trailing" constant="86" id="DbL-UY-vx6"/>
                                     <constraint firstItem="YFx-N7-OWy" firstAttribute="top" secondItem="8Qh-aI-ABw" secondAttribute="bottom" id="FLg-jw-p3R"/>
-                                    <constraint firstItem="3eE-gp-qb8" firstAttribute="top" secondItem="YFx-N7-OWy" secondAttribute="bottom" constant="-1" id="Qzx-yu-r9E"/>
-                                    <constraint firstItem="3eE-gp-qb8" firstAttribute="leading" secondItem="KXx-9M-HUY" secondAttribute="leading" constant="91" id="UIK-S7-T7a"/>
                                     <constraint firstItem="YFx-N7-OWy" firstAttribute="leading" secondItem="8Qh-aI-ABw" secondAttribute="leading" id="fkI-2a-JTy"/>
                                     <constraint firstItem="8Qh-aI-ABw" firstAttribute="top" secondItem="KXx-9M-HUY" secondAttribute="top" id="fqh-ST-2gs"/>
-                                    <constraint firstItem="8Qh-aI-ABw" firstAttribute="width" secondItem="3eE-gp-qb8" secondAttribute="width" id="kZ5-qv-gw5"/>
                                     <constraint firstAttribute="width" constant="322" id="kb7-mW-ksr"/>
                                     <constraint firstItem="YFx-N7-OWy" firstAttribute="trailing" secondItem="8Qh-aI-ABw" secondAttribute="trailing" id="oBY-Hh-2JS"/>
                                     <constraint firstAttribute="bottom" secondItem="8Qh-aI-ABw" secondAttribute="bottom" constant="45" id="q9M-ux-BBS"/>
@@ -174,7 +169,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="VlY-UB-nhL"/>
                     <connections>
-                        <outlet property="gallery" destination="3eE-gp-qb8" id="9J0-Fb-4JY"/>
                         <outlet property="hexField" destination="Caq-xg-bMX" id="nQ9-AF-UhF"/>
                         <outlet property="imageViewOutlet" destination="sE5-hL-6BQ" id="w8R-Vj-lyS"/>
                         <outlet property="pickerImage" destination="6ev-bq-jJF" id="Tdk-us-9CQ"/>
